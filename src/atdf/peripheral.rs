@@ -3,6 +3,41 @@ use crate::chip;
 use crate::util;
 use crate::ElementExt;
 
+fn update_register_group(register_group: &mut chip::RegisterGroup, delta: usize) {
+    for register in register_group.registers.values_mut() {
+        register.offset -= delta;
+    }
+    for subgroup in register_group.subgroups.iter_mut() {
+        update_register_group(subgroup, delta);
+    }
+}
+
+fn base_line_address(peripheral: &mut chip::Peripheral) {
+    let register_addresses = peripheral
+        .register_group
+        .registers
+        .values()
+        .map(|r| peripheral.address + r.offset)
+        .collect::<Vec<_>>();
+
+    if register_addresses.is_empty() {
+        return;
+    }
+    // Find the minimum register address, returning early if no registers exist
+    let min_address = match register_addresses.iter().min() {
+        Some(addr) => *addr, // Dereference to get the actual usize value
+        None => peripheral.address,
+    };
+    // base_address still contains the offset, so we need to subtract it
+    if min_address > peripheral.address {
+        println!("cargo:warning=Peripheral {} has a base address of {} which is greater than the peripheral address {}",
+            peripheral.name, min_address, peripheral.address);
+        let delta = min_address - peripheral.address;
+        peripheral.address = min_address;
+        update_register_group(&mut peripheral.register_group, delta);
+    }
+}
+
 pub fn parse_list(
     el: &xmltree::Element,
     modules: &xmltree::Element,
@@ -37,7 +72,7 @@ pub fn parse_list(
                 0,
             )?;
 
-            peripherals.push(chip::Peripheral {
+            let mut peripheral = chip::Peripheral {
                 name: instance.attr("name")?.clone(),
                 name_in_module: name_in_module.clone(),
                 description: instance
@@ -48,7 +83,11 @@ pub fn parse_list(
                     .and_then(|d| if !d.is_empty() { Some(d) } else { None }),
                 address,
                 register_group: main_register_group,
-            })
+            };
+
+            base_line_address(&mut peripheral);
+
+            peripherals.push(peripheral)
         }
     }
 

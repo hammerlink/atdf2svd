@@ -31,10 +31,12 @@ fn create_address_blocks(p: &chip::Peripheral) -> crate::Result<Option<Vec<svd_r
     let mut current_size = 0;
     for reg in registers.into_iter() {
         let current_address = current_offset + current_size;
-        if current_address == reg.address {
+        if current_address == reg.offset {
             current_size += reg.size;
         } else {
-            address_blocks.push(new_address_block(current_offset, current_size.try_into()?)?);
+            if current_size > 0 {
+                address_blocks.push(new_address_block(current_offset, current_size.try_into()?)?);
+            }
 
             current_offset = reg.offset;
             current_size = reg.size;
