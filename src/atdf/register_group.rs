@@ -45,7 +45,7 @@ pub fn parse_list(
 pub fn build_register_group_hierarchy(
     register_group: &mut chip::RegisterGroup,
     register_groups: &mut BTreeMap<String, chip::RegisterGroup>,
-    base_address: usize,
+    current_address: usize,
     level: usize,
 ) -> crate::Result<()> {
     // Infinite recursion guard
@@ -59,14 +59,13 @@ pub fn build_register_group_hierarchy(
             if let Some(subgroup) = register_groups.get(name_in_module) {
                 let mut subgroup = subgroup.clone();
                 // The reference offset & name is used to override the subgroup
-                if let Some(offset) = reference.offset {
-                    // Update the subgroup's offset to be relative to the parent
-                    let new_offset = register_group.offset + offset;
-                    subgroup.offset = new_offset;
+                let offset = reference.offset.unwrap_or(0);
+                let new_address = current_address + offset;
 
+                if offset > 0 {
                     // Adjust each register's address by the calculated adjustment
                     subgroup.registers.iter_mut().for_each(|(_, register)| {
-                        register.address = base_address + new_offset + register.offset;
+                        register.address = new_address + register.offset;
                     });
                 }
                 subgroup.name = reference.name.clone();
@@ -74,7 +73,7 @@ pub fn build_register_group_hierarchy(
                 build_register_group_hierarchy(
                     &mut subgroup,
                     register_groups,
-                    base_address,
+                    new_address,
                     level + 1,
                 )?;
                 register_group.subgroups.push(subgroup);
