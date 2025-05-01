@@ -24,21 +24,6 @@
       <name>AC</name>
       <description>Analog Comparator</description>
       <baseAddress>0x00000050</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2B</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2F</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ACSR</name>
@@ -158,11 +143,6 @@
       <name>ADC</name>
       <description>Analog-to-Digital Converter</description>
       <baseAddress>0x00000077</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ADC</name>
@@ -612,11 +592,6 @@
       <name>BOOT_LOAD</name>
       <description>Bootloader</description>
       <baseAddress>0x00000057</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>SPMCSR</name>
@@ -681,36 +656,6 @@
       <name>CPU</name>
       <description>CPU Registers</description>
       <baseAddress>0x0000003E</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x15</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x1D</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x23</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x25</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <interrupt>
         <name>RESET</name>
         <description>External Pin,Power-on Reset,Brown-out Reset,Watchdog Reset,and JTAG AVR Reset. See Datasheet.     </description>
@@ -1650,11 +1595,6 @@
       <name>EEPROM</name>
       <description>EEPROM</description>
       <baseAddress>0x0000003F</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EEAR</name>
@@ -1764,16 +1704,6 @@
       <name>EXINT</name>
       <description>External Interrupts</description>
       <baseAddress>0x0000003B</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2D</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EICRA</name>
@@ -2238,16 +2168,6 @@
       <name>FLASH</name>
       <description>FLASH Controller</description>
       <baseAddress>0x00000067</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xE</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BGCR</name>
@@ -2388,11 +2308,6 @@
       <name>FUSE</name>
       <description>Fuses</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EXTENDED</name>
@@ -2653,16 +2568,6 @@
       <name>JTAG</name>
       <description>JTAG Interface</description>
       <baseAddress>0x00000051</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>MCUCR</name>
@@ -2725,11 +2630,6 @@
       <name>LOCKBIT</name>
       <description>Lockbits</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>LOCKBIT</name>
@@ -2834,11 +2734,6 @@
       <name>PORTA</name>
       <description>I/O Port</description>
       <baseAddress>0x00000020</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRA</name>
@@ -2885,11 +2780,6 @@
       <name>PORTB</name>
       <description>I/O Port</description>
       <baseAddress>0x00000023</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRB</name>
@@ -2936,11 +2826,6 @@
       <name>PORTC</name>
       <description>I/O Port</description>
       <baseAddress>0x00000026</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRC</name>
@@ -2987,11 +2872,6 @@
       <name>PORTD</name>
       <description>I/O Port</description>
       <baseAddress>0x00000029</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRD</name>
@@ -3038,11 +2918,6 @@
       <name>PORTE</name>
       <description>I/O Port</description>
       <baseAddress>0x0000002C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRE</name>
@@ -3089,11 +2964,6 @@
       <name>PORTF</name>
       <description>I/O Port</description>
       <baseAddress>0x0000002F</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRF</name>
@@ -3140,11 +3010,6 @@
       <name>PORTG</name>
       <description>I/O Port</description>
       <baseAddress>0x00000032</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRG</name>
@@ -3191,21 +3056,6 @@
       <name>PWRCTRL</name>
       <description>Power Controller</description>
       <baseAddress>0x00000055</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xDA</offset>
-        <size>0x9</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xE4</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DPDS0</name>
@@ -3713,11 +3563,6 @@
       <name>SPI</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x0000004C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>SPCR</name>
@@ -3878,11 +3723,6 @@
       <name>SYMCNT</name>
       <description>MAC Symbol Counter</description>
       <baseAddress>0x000000DC</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1D</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>SCBTSRHH</name>
@@ -4589,21 +4429,6 @@
       <name>TC0</name>
       <description>Timer/Counter, 8-bit</description>
       <baseAddress>0x00000035</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xE</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>GTCCR</name>
@@ -4971,26 +4796,6 @@
       <name>TC1</name>
       <description>Timer/Counter, 16-bit</description>
       <baseAddress>0x00000036</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4A</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4E</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ICR1</name>
@@ -5422,31 +5227,6 @@
       <name>TC2</name>
       <description>Timer/Counter, 8-bit Async</description>
       <baseAddress>0x00000037</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x79</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x7F</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ASSR</name>
@@ -5853,26 +5633,6 @@
       <name>TC3</name>
       <description>Timer/Counter, 16-bit</description>
       <baseAddress>0x00000038</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x58</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x5C</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ICR3</name>
@@ -6304,26 +6064,6 @@
       <name>TC4</name>
       <description>Timer/Counter, 16-bit</description>
       <baseAddress>0x00000039</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x67</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6B</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ICR4</name>
@@ -6720,26 +6460,6 @@
       <name>TC5</name>
       <description>Timer/Counter, 16-bit</description>
       <baseAddress>0x0000003A</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xE6</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xEA</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ICR5</name>
@@ -7136,51 +6856,6 @@
       <name>TRX24</name>
       <description>Low-Power 2.4 GHz Transceiver</description>
       <baseAddress>0x0000013C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x5</offset>
-        <size>0x12</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x19</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x1B</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x1E</offset>
-        <size>0x16</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3A</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3F</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x44</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC3</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>AES_CTRL</name>
@@ -9755,11 +9430,6 @@
       <name>TWI</name>
       <description>Two Wire Serial Interface</description>
       <baseAddress>0x000000B8</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>TWAMR</name>
@@ -9981,16 +9651,6 @@
       <name>USART0</name>
       <description>USART</description>
       <baseAddress>0x000000C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>UBRR0</name>
@@ -10282,11 +9942,6 @@
       <name>USART0_SPI</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x000000C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>UCSR0A</name>
@@ -10387,16 +10042,6 @@
       <name>USART1</name>
       <description>USART</description>
       <baseAddress>0x000000C8</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>UBRR1</name>
@@ -10688,11 +10333,6 @@
       <name>USART1_SPI</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x000000C8</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>UCSR1A</name>
@@ -10793,11 +10433,6 @@
       <name>WDT</name>
       <description>Watchdog Timer</description>
       <baseAddress>0x00000060</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>WDTCSR</name>

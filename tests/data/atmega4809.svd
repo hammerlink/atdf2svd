@@ -24,26 +24,6 @@
       <name>AC0</name>
       <description>Analog Comparator</description>
       <baseAddress>0x00000680</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -290,21 +270,6 @@
       <name>ADC0</name>
       <description>Analog to Digital Converter</description>
       <baseAddress>0x00000600</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CALIB</name>
@@ -948,16 +913,6 @@
       <name>BOD</name>
       <description>Bod interface</description>
       <baseAddress>0x00000080</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -1193,21 +1148,6 @@
       <name>CCL</name>
       <description>Configurable Custom Logic</description>
       <baseAddress>0x000001C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x11</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -2812,26 +2752,6 @@
       <name>CLKCTRL</name>
       <description>Clock controller</description>
       <baseAddress>0x00000060</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>MCLKCTRLA</name>
@@ -3156,16 +3076,6 @@
       <name>CPU</name>
       <description>CPU</description>
       <baseAddress>0x00000030</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <interrupt>
         <name>CRCSCAN_NMI</name>
         <description>No Description.</description>
@@ -3424,11 +3334,6 @@
       <name>CPUINT</name>
       <description>Interrupt Controller</description>
       <baseAddress>0x00000110</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -3532,11 +3437,6 @@
       <name>CRCSCAN</name>
       <description>CRCSCAN</description>
       <baseAddress>0x00000120</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -3627,21 +3527,6 @@
       <name>EVSYS</name>
       <description>Event System</description>
       <baseAddress>0x00000180</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x18</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CHANNEL0</name>
@@ -7189,16 +7074,6 @@
       <name>FUSE</name>
       <description>Fuses</description>
       <baseAddress>0x00001280</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>APPEND</name>
@@ -7659,11 +7534,6 @@
       <name>GPIO</name>
       <description>General Purpose IO</description>
       <baseAddress>0x0000001C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>GPIOR0</name>
@@ -7723,11 +7593,6 @@
       <name>LOCKBIT</name>
       <description>Lockbit</description>
       <baseAddress>0x0000128A</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>LOCKBIT</name>
@@ -7765,16 +7630,6 @@
       <name>NVMCTRL</name>
       <description>Non-volatile Memory Controller</description>
       <baseAddress>0x00001000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ADDR</name>
@@ -7946,16 +7801,6 @@
       <name>PORTA</name>
       <description>I/O Ports</description>
       <baseAddress>0x00000400</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -9044,16 +8889,6 @@
       <name>PORTB</name>
       <description>I/O Ports</description>
       <baseAddress>0x00000420</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -10022,16 +9857,6 @@
       <name>PORTC</name>
       <description>I/O Ports</description>
       <baseAddress>0x00000440</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -11120,16 +10945,6 @@
       <name>PORTD</name>
       <description>I/O Ports</description>
       <baseAddress>0x00000460</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -12218,16 +12033,6 @@
       <name>PORTE</name>
       <description>I/O Ports</description>
       <baseAddress>0x00000480</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -13076,16 +12881,6 @@
       <name>PORTF</name>
       <description>I/O Ports</description>
       <baseAddress>0x000004A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xB</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -14114,11 +13909,6 @@
       <name>PORTMUX</name>
       <description>Port Multiplexer</description>
       <baseAddress>0x000005E0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCLROUTEA</name>
@@ -14471,11 +14261,6 @@
       <name>RSTCTRL</name>
       <description>Reset controller</description>
       <baseAddress>0x00000040</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>RSTFR</name>
@@ -14543,21 +14328,6 @@
       <name>RTC</name>
       <description>Real-Time Counter</description>
       <baseAddress>0x00000140</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xE</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CALIB</name>
@@ -15053,31 +14823,6 @@
       <name>SIGROW</name>
       <description>Signature row</description>
       <baseAddress>0x00001100</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CHECKSUM1</name>
@@ -15410,11 +15155,6 @@
       <name>SLPCTRL</name>
       <description>Sleep Controller</description>
       <baseAddress>0x00000050</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -15463,11 +15203,6 @@
       <name>SPI0</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x000008C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -15700,16 +15435,6 @@
       <name>SYSCFG</name>
       <description>System Configuration Registers</description>
       <baseAddress>0x00000F00</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EXTBRK</name>
@@ -15773,106 +15498,6 @@
       <name>TCA0</name>
       <description>16-bit Timer/Counter Type A</description>
       <baseAddress>0x00000A00</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <cluster>
           <name>SINGLE</name>
@@ -16988,16 +16613,6 @@
       <name>TCB0</name>
       <description>16-bit Timer Type B</description>
       <baseAddress>0x00000A80</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCMP</name>
@@ -17262,16 +16877,6 @@
       <name>TCB1</name>
       <description>16-bit Timer Type B</description>
       <baseAddress>0x00000A90</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCMP</name>
@@ -17536,16 +17141,6 @@
       <name>TCB2</name>
       <description>16-bit Timer Type B</description>
       <baseAddress>0x00000AA0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCMP</name>
@@ -17810,16 +17405,6 @@
       <name>TCB3</name>
       <description>16-bit Timer Type B</description>
       <baseAddress>0x00000AB0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCMP</name>
@@ -18084,11 +17669,6 @@
       <name>TWI0</name>
       <description>Two-Wire Interface</description>
       <baseAddress>0x000008A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xF</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -18708,11 +18288,6 @@
       <name>USART0</name>
       <description>Universal Synchronous and Asynchronous Receiver and Transmitter</description>
       <baseAddress>0x00000800</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xF</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUD</name>
@@ -19310,11 +18885,6 @@
       <name>USART1</name>
       <description>Universal Synchronous and Asynchronous Receiver and Transmitter</description>
       <baseAddress>0x00000820</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xF</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUD</name>
@@ -19912,11 +19482,6 @@
       <name>USART2</name>
       <description>Universal Synchronous and Asynchronous Receiver and Transmitter</description>
       <baseAddress>0x00000840</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xF</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUD</name>
@@ -20514,11 +20079,6 @@
       <name>USART3</name>
       <description>Universal Synchronous and Asynchronous Receiver and Transmitter</description>
       <baseAddress>0x00000860</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xF</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUD</name>
@@ -21116,11 +20676,6 @@
       <name>USERROW</name>
       <description>User Row</description>
       <baseAddress>0x00001300</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x40</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>USERROW0</name>
@@ -21960,11 +21515,6 @@
       <name>VPORTA</name>
       <description>Virtual Ports</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22032,11 +21582,6 @@
       <name>VPORTB</name>
       <description>Virtual Ports</description>
       <baseAddress>0x00000004</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22104,11 +21649,6 @@
       <name>VPORTC</name>
       <description>Virtual Ports</description>
       <baseAddress>0x00000008</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22176,11 +21716,6 @@
       <name>VPORTD</name>
       <description>Virtual Ports</description>
       <baseAddress>0x0000000C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22248,11 +21783,6 @@
       <name>VPORTE</name>
       <description>Virtual Ports</description>
       <baseAddress>0x00000010</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22320,11 +21850,6 @@
       <name>VPORTF</name>
       <description>Virtual Ports</description>
       <baseAddress>0x00000014</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22392,11 +21917,6 @@
       <name>VREF</name>
       <description>Voltage reference</description>
       <baseAddress>0x000000A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -22511,11 +22031,6 @@
       <name>WDT</name>
       <description>Watch-Dog Timer</description>
       <baseAddress>0x00000100</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
