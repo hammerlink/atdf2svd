@@ -55,7 +55,7 @@ pub struct RegisterGroup {
     /// Offset relative to the peripheral base address
     pub offset: usize,
     /// Indicates if this register group is a union.
-    /// 
+    ///
     /// Currently limits nested register group functionality.
     /// If removed, full nested register group support would be enabled (#4).
     pub is_union: bool,
