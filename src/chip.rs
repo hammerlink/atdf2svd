@@ -25,16 +25,6 @@ pub struct Peripheral {
     pub register_group: RegisterGroup,
 }
 
-impl Peripheral {
-    pub fn base_address(&self) -> Option<usize> {
-        self.register_group
-            .get_all_registers()
-            .iter()
-            .map(|r| r.address)
-            .min()
-    }
-}
-
 #[derive(Debug, Clone)]
 pub struct Interrupt {
     pub name: String,
