@@ -54,6 +54,7 @@ pub struct RegisterGroup {
     pub description: Option<String>,
     /// Offset relative to the peripheral base address
     pub offset: usize,
+    pub is_union: bool,
 
     /// The register group references to other register groups. This is only used for filling up
     /// the subgroups.

@@ -21,6 +21,11 @@ pub fn parse_list(
             .get("caption")
             .filter(|d| !d.is_empty())
             .cloned();
+        let class = register_group_header_el
+            .attributes
+            .get("class")
+            .filter(|d| !d.is_empty())
+            .cloned();
 
         let references = parse_references(register_group_header_el)?;
         let registers =
@@ -32,6 +37,7 @@ pub fn parse_list(
                 name,
                 description,
                 offset: 0,
+                is_union: class == Some("union".to_string()),
                 registers,
                 references,
                 // subgroups will be filled in when all register-groups are parsed
