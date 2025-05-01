@@ -30,17 +30,17 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x6</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -296,12 +296,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x8</offset>
+        <offset>0x0</offset>
         <size>0x6</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x7</size>
         <usage>registers</usage>
       </addressBlock>
@@ -954,7 +954,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x8</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
@@ -1199,12 +1199,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x5</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x7</offset>
+        <offset>0x0</offset>
         <size>0x11</size>
         <usage>registers</usage>
       </addressBlock>
@@ -2818,17 +2818,17 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x18</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x1C</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
@@ -3155,14 +3155,14 @@
     <peripheral>
       <name>CPU</name>
       <description>CPU</description>
-      <baseAddress>0x00000034</baseAddress>
+      <baseAddress>0x00000030</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x9</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -3365,7 +3365,7 @@
         <register>
           <name>CCP</name>
           <description>Configuration Change Protection</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x4</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <fields>
@@ -3395,7 +3395,7 @@
         <register>
           <name>SPH</name>
           <description>Stack Pointer High</description>
-          <addressOffset>0xA</addressOffset>
+          <addressOffset>0xE</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -3408,7 +3408,7 @@
         <register>
           <name>SPL</name>
           <description>Stack Pointer Low</description>
-          <addressOffset>0x9</addressOffset>
+          <addressOffset>0xD</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -3633,12 +3633,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x18</size>
         <usage>registers</usage>
       </addressBlock>
@@ -7195,7 +7195,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x5</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
@@ -7771,7 +7771,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x6</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
@@ -7952,7 +7952,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -9050,7 +9050,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -10028,7 +10028,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -11126,7 +11126,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -12224,7 +12224,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -13082,7 +13082,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -14549,12 +14549,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x15</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
@@ -15059,22 +15059,22 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x14</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x18</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x6</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2F</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
@@ -15699,14 +15699,14 @@
     <peripheral>
       <name>SYSCFG</name>
       <description>System Configuration Registers</description>
-      <baseAddress>0x00000F01</baseAddress>
+      <baseAddress>0x00000F00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x17</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -15714,7 +15714,7 @@
         <register>
           <name>EXTBRK</name>
           <description>External Break</description>
-          <addressOffset>0x1</addressOffset>
+          <addressOffset>0x2</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <fields>
@@ -15729,7 +15729,7 @@
         <register>
           <name>OCDM</name>
           <description>OCD Message Register</description>
-          <addressOffset>0x17</addressOffset>
+          <addressOffset>0x18</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -15742,7 +15742,7 @@
         <register>
           <name>OCDMS</name>
           <description>OCD Message Status</description>
-          <addressOffset>0x18</addressOffset>
+          <addressOffset>0x19</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <fields>
@@ -15757,7 +15757,7 @@
         <register>
           <name>REVID</name>
           <description>Revision ID</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x1</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -15775,37 +15775,107 @@
       <baseAddress>0x00000A00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x8</size>
+        <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x9</offset>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xE</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x26</offset>
-        <size>0x8</size>
+        <offset>0x0</offset>
+        <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x36</offset>
+        <offset>0x0</offset>
+        <size>0x1</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x4</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x4</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x4</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x2</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <addressBlock>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
         <cluster>
-          <name>TCA_SINGLE</name>
+          <name>SINGLE</name>
           <description>16-bit Timer/Counter Type A - Single Mode</description>
           <addressOffset>0x0</addressOffset>
           <register>
@@ -16434,7 +16504,7 @@
           </register>
         </cluster>
         <cluster>
-          <name>TCA_SPLIT</name>
+          <name>SPLIT</name>
           <description>16-bit Timer/Counter Type A - Split Mode</description>
           <addressOffset>0x0</addressOffset>
           <register>
@@ -16924,7 +16994,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0xA</size>
         <usage>registers</usage>
       </addressBlock>
@@ -17198,7 +17268,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0xA</size>
         <usage>registers</usage>
       </addressBlock>
@@ -17472,7 +17542,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0xA</size>
         <usage>registers</usage>
       </addressBlock>
@@ -17746,7 +17816,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0xA</size>
         <usage>registers</usage>
       </addressBlock>

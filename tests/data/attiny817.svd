@@ -30,12 +30,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x6</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -260,12 +260,12 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x8</offset>
+        <offset>0x0</offset>
         <size>0x6</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x7</size>
         <usage>registers</usage>
       </addressBlock>
@@ -898,7 +898,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x8</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
@@ -1168,7 +1168,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x5</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -1877,17 +1877,17 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x18</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x1C</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
@@ -2214,14 +2214,14 @@
     <peripheral>
       <name>CPU</name>
       <description>CPU</description>
-      <baseAddress>0x00000034</baseAddress>
+      <baseAddress>0x00000030</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x9</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -2354,7 +2354,7 @@
         <register>
           <name>CCP</name>
           <description>Configuration Change Protection</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x4</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <fields>
@@ -2384,7 +2384,7 @@
         <register>
           <name>SPH</name>
           <description>Stack Pointer High</description>
-          <addressOffset>0xA</addressOffset>
+          <addressOffset>0xE</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -2397,7 +2397,7 @@
         <register>
           <name>SPL</name>
           <description>Stack Pointer Low</description>
-          <addressOffset>0x9</addressOffset>
+          <addressOffset>0xD</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -2690,17 +2690,17 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xA</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x12</offset>
+        <offset>0x0</offset>
         <size>0xB</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x22</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
@@ -4073,7 +4073,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0x5</size>
         <usage>registers</usage>
       </addressBlock>
@@ -4711,7 +4711,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x6</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
@@ -4892,7 +4892,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -5975,7 +5975,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -7058,7 +7058,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -8411,17 +8411,17 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x7</offset>
+        <offset>0x0</offset>
         <size>0x7</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x15</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
@@ -8893,7 +8893,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x6</size>
         <usage>registers</usage>
       </addressBlock>
@@ -9440,7 +9440,7 @@
     <peripheral>
       <name>SYSCFG</name>
       <description>System Configuration Registers</description>
-      <baseAddress>0x00000F01</baseAddress>
+      <baseAddress>0x00000F00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
         <size>0x2</size>
@@ -9450,7 +9450,7 @@
         <register>
           <name>EXTBRK</name>
           <description>External Break</description>
-          <addressOffset>0x1</addressOffset>
+          <addressOffset>0x2</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <fields>
@@ -9465,7 +9465,7 @@
         <register>
           <name>REVID</name>
           <description>Revision ID</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x1</addressOffset>
           <size>0x8</size>
           <access>read-write</access>
           <writeConstraint>
@@ -9492,92 +9492,92 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x1</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x3</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x5</offset>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x9</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xA</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xB</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xE</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xE</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x20</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x26</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x26</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x28</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2A</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2C</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x36</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -10733,7 +10733,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x4</offset>
+        <offset>0x0</offset>
         <size>0xA</size>
         <usage>registers</usage>
       </addressBlock>
@@ -11007,42 +11007,42 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x8</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xC</offset>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x10</offset>
+        <offset>0x0</offset>
         <size>0x3</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x14</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x18</offset>
+        <offset>0x0</offset>
         <size>0x2</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x1E</offset>
+        <offset>0x0</offset>
         <size>0x1</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x22</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x28</offset>
+        <offset>0x0</offset>
         <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
@@ -12114,7 +12114,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0x2</offset>
+        <offset>0x0</offset>
         <size>0xD</size>
         <usage>registers</usage>
       </addressBlock>
@@ -12691,7 +12691,7 @@
         <usage>registers</usage>
       </addressBlock>
       <addressBlock>
-        <offset>0xB</offset>
+        <offset>0x0</offset>
         <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
