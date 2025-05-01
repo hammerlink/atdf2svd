@@ -1,5 +1,6 @@
 ---
 source: tests/regression.rs
+assertion_line: 19
 expression: svd
 ---
 <?xml version="1.0" encoding="UTF-8"?>
@@ -28,11 +29,6 @@ expression: svd
       <name>ACA</name>
       <description>Analog Comparator</description>
       <baseAddress>0x00000380</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>AC0CTRL</name>
@@ -648,11 +644,6 @@ expression: svd
       <name>ACB</name>
       <description>Analog Comparator</description>
       <baseAddress>0x00000390</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>AC0CTRL</name>
@@ -1268,26 +1259,6 @@ expression: svd
       <name>ADCA</name>
       <description>Analog/Digital Converter</description>
       <baseAddress>0x00000200</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CAL</name>
@@ -1791,26 +1762,6 @@ expression: svd
       <name>ADCB</name>
       <description>Analog/Digital Converter</description>
       <baseAddress>0x00000240</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CAL</name>
@@ -2314,11 +2265,6 @@ expression: svd
       <name>AES</name>
       <description>AES Module</description>
       <baseAddress>0x000000C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -2452,21 +2398,6 @@ expression: svd
       <name>AWEXC</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000880</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -2697,21 +2628,6 @@ expression: svd
       <name>AWEXE</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000A80</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -2942,11 +2858,6 @@ expression: svd
       <name>CLK</name>
       <description>Clock System</description>
       <baseAddress>0x00000040</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -3161,16 +3072,6 @@ expression: svd
       <name>CPU</name>
       <description>CPU</description>
       <baseAddress>0x00000034</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCP</name>
@@ -3299,21 +3200,6 @@ expression: svd
       <name>DACA</name>
       <description>Digital/Analog Converter</description>
       <baseAddress>0x00000300</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x8</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x18</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CH0DATA</name>
@@ -3738,21 +3624,6 @@ expression: svd
       <name>DACB</name>
       <description>Digital/Analog Converter</description>
       <baseAddress>0x00000320</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x8</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x18</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CH0DATA</name>
@@ -4177,16 +4048,6 @@ expression: svd
       <name>DFLLRC2M</name>
       <description>DFLL</description>
       <baseAddress>0x00000068</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CALA</name>
@@ -4290,16 +4151,6 @@ expression: svd
       <name>DFLLRC32M</name>
       <description>DFLL</description>
       <baseAddress>0x00000060</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CALA</name>
@@ -4403,21 +4254,6 @@ expression: svd
       <name>DMA</name>
       <description>DMA Controller</description>
       <baseAddress>0x00000100</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -4635,16 +4471,6 @@ expression: svd
       <name>EBI</name>
       <description>External Bus Interface</description>
       <baseAddress>0x00000440</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -5127,11 +4953,6 @@ expression: svd
       <name>EVSYS</name>
       <description>Event System</description>
       <baseAddress>0x00000180</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x12</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CH0CTRL</name>
@@ -10755,16 +10576,6 @@ expression: svd
       <name>FUSE</name>
       <description>Non Volatile Memory Controller</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>FUSEBYTE0</name>
@@ -11135,11 +10946,6 @@ expression: svd
       <name>GPIO</name>
       <description>General Purpose IO</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x10</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>GPIOR0</name>
@@ -11355,11 +11161,6 @@ expression: svd
       <name>HIRESC</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000890</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -11407,11 +11208,6 @@ expression: svd
       <name>HIRESD</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000990</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -11459,11 +11255,6 @@ expression: svd
       <name>HIRESE</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000A90</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -11511,11 +11302,6 @@ expression: svd
       <name>HIRESF</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000B90</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRLA</name>
@@ -11563,11 +11349,6 @@ expression: svd
       <name>IRCOM</name>
       <description>IR Communication Module</description>
       <baseAddress>0x000008F8</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -11666,11 +11447,6 @@ expression: svd
       <name>LOCKBIT</name>
       <description>Non Volatile Memory Controller</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>LOCKBITS</name>
@@ -11806,21 +11582,6 @@ expression: svd
       <name>MCU</name>
       <description>MCU Control</description>
       <baseAddress>0x00000090</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x8</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>AWEXLOCK</name>
@@ -11950,26 +11711,6 @@ expression: svd
       <name>NVM</name>
       <description>Non Volatile Memory Controller</description>
       <baseAddress>0x000001C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xA</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ADDR0</name>
@@ -12525,11 +12266,6 @@ expression: svd
       <name>OCD</name>
       <description>On-Chip Debug System</description>
       <baseAddress>0x0000002E</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>OCDR0</name>
@@ -12573,11 +12309,6 @@ expression: svd
       <name>OSC</name>
       <description>Oscillator</description>
       <baseAddress>0x00000050</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -12847,11 +12578,6 @@ expression: svd
       <name>PMIC</name>
       <description>Programmable Multi-level Interrupt Controller</description>
       <baseAddress>0x000000A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -12952,16 +12678,6 @@ expression: svd
       <name>PORTA</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000600</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -14068,16 +13784,6 @@ expression: svd
       <name>PORTB</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000620</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -15184,16 +14890,6 @@ expression: svd
       <name>PORTC</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000640</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -16300,16 +15996,6 @@ expression: svd
       <name>PORTD</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000660</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -17416,16 +17102,6 @@ expression: svd
       <name>PORTE</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000680</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -18532,16 +18208,6 @@ expression: svd
       <name>PORTF</name>
       <description>Port Configuration</description>
       <baseAddress>0x000006A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -19648,16 +19314,6 @@ expression: svd
       <name>PORTH</name>
       <description>Port Configuration</description>
       <baseAddress>0x000006E0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -20764,16 +20420,6 @@ expression: svd
       <name>PORTJ</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000700</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -21880,16 +21526,6 @@ expression: svd
       <name>PORTK</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000720</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -22996,16 +22632,6 @@ expression: svd
       <name>PORTQ</name>
       <description>Port Configuration</description>
       <baseAddress>0x000007C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -24112,16 +23738,6 @@ expression: svd
       <name>PORTR</name>
       <description>Port Configuration</description>
       <baseAddress>0x000007E0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0xD</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -25228,16 +24844,6 @@ expression: svd
       <name>PORT_CFG</name>
       <description>Port Configuration</description>
       <baseAddress>0x000000B0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CLKEVOUT</name>
@@ -25711,11 +25317,6 @@ expression: svd
       <name>PR</name>
       <description>Clock System</description>
       <baseAddress>0x00000070</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>PRGEN</name>
@@ -26020,46 +25621,6 @@ expression: svd
       <name>PROD_SIGNATURES</name>
       <description>Non Volatile Memory Controller</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x8</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x10</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x12</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x24</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2E</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ADCACAL0</name>
@@ -26379,11 +25940,6 @@ expression: svd
       <name>RST</name>
       <description>Reset</description>
       <baseAddress>0x00000078</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -26457,16 +26013,6 @@ expression: svd
       <name>RTC</name>
       <description>Real-Time Counter</description>
       <baseAddress>0x00000400</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x8</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CNT</name>
@@ -26693,11 +26239,6 @@ expression: svd
       <name>SLEEP</name>
       <description>Sleep Controller</description>
       <baseAddress>0x00000048</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -26756,11 +26297,6 @@ expression: svd
       <name>SPIC</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x000008C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -26937,11 +26473,6 @@ expression: svd
       <name>SPID</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x000009C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -27118,11 +26649,6 @@ expression: svd
       <name>SPIE</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x00000AC0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -27299,11 +26825,6 @@ expression: svd
       <name>SPIF</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x00000BC0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -27480,36 +27001,6 @@ expression: svd
       <name>TCC0</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000800</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -28424,36 +27915,6 @@ expression: svd
       <name>TCC1</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000840</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -29194,36 +28655,6 @@ expression: svd
       <name>TCD0</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000900</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -30138,36 +29569,6 @@ expression: svd
       <name>TCD1</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000940</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -30908,36 +30309,6 @@ expression: svd
       <name>TCE0</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000A00</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -31852,36 +31223,6 @@ expression: svd
       <name>TCE1</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000A40</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -32622,36 +31963,6 @@ expression: svd
       <name>TCF0</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000B00</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0xA</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -33566,36 +32877,6 @@ expression: svd
       <name>TCF1</name>
       <description>16-bit Timer/Counter With PWM</description>
       <baseAddress>0x00000B40</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x7</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xF</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x20</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x36</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CCA</name>
@@ -34336,11 +33617,6 @@ expression: svd
       <name>TWIC</name>
       <description>Two-Wire Interface</description>
       <baseAddress>0x00000480</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -34394,11 +33670,6 @@ expression: svd
       <name>TWID</name>
       <description>Two-Wire Interface</description>
       <baseAddress>0x00000490</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -34452,11 +33723,6 @@ expression: svd
       <name>TWIE</name>
       <description>Two-Wire Interface</description>
       <baseAddress>0x000004A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -34510,11 +33776,6 @@ expression: svd
       <name>TWIF</name>
       <description>Two-Wire Interface</description>
       <baseAddress>0x000004B0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>
@@ -34568,16 +33829,6 @@ expression: svd
       <name>USARTC0</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x000008A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -34964,16 +34215,6 @@ expression: svd
       <name>USARTC1</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x000008B0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -35360,16 +34601,6 @@ expression: svd
       <name>USARTD0</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x000009A0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -35756,16 +34987,6 @@ expression: svd
       <name>USARTD1</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x000009B0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -36152,16 +35373,6 @@ expression: svd
       <name>USARTE0</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x00000AA0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -36548,16 +35759,6 @@ expression: svd
       <name>USARTE1</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x00000AB0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -36944,16 +36145,6 @@ expression: svd
       <name>USARTF0</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x00000BA0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -37340,16 +36531,6 @@ expression: svd
       <name>USARTF1</name>
       <description>Universal Asynchronous Receiver-Transmitter</description>
       <baseAddress>0x00000BB0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x3</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>BAUDCTRLA</name>
@@ -37736,11 +36917,6 @@ expression: svd
       <name>VPORT0</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000010</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -37808,11 +36984,6 @@ expression: svd
       <name>VPORT1</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000014</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -37880,11 +37051,6 @@ expression: svd
       <name>VPORT2</name>
       <description>Port Configuration</description>
       <baseAddress>0x00000018</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -37952,11 +37118,6 @@ expression: svd
       <name>VPORT3</name>
       <description>Port Configuration</description>
       <baseAddress>0x0000001C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DIR</name>
@@ -38024,11 +37185,6 @@ expression: svd
       <name>WDT</name>
       <description>Watch-Dog Timer</description>
       <baseAddress>0x00000080</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>CTRL</name>

@@ -64,7 +64,7 @@ pub fn generate(p: &chip::Peripheral) -> crate::Result<svd_rs::Peripheral> {
             Some("No Description.".to_owned())
         }))
         .base_address(u64::from(base))
-        .address_block(create_address_blocks(p)?)
+        // .address_block(create_address_blocks(p)?)
         .registers(Some(registers))
         .build(svd_rs::ValidateLevel::Strict)
         .map(svd_rs::Peripheral::Single)

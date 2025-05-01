@@ -28,16 +28,6 @@ expression: svd
       <name>AC</name>
       <description>Analog Comparator</description>
       <baseAddress>0x00000050</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2F</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ACSR</name>
@@ -142,16 +132,6 @@ expression: svd
       <name>ADC</name>
       <description>Analog-to-Digital Converter</description>
       <baseAddress>0x00000078</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x6</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ADC</name>
@@ -485,41 +465,6 @@ expression: svd
       <name>CPU</name>
       <description>CPU Registers</description>
       <baseAddress>0x0000003E</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x15</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x19</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x23</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x26</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x28</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <interrupt>
         <name>RESET</name>
         <description>External Pin, Power-on Reset, Brown-out Reset and Watchdog Reset</description>
@@ -1034,11 +979,6 @@ expression: svd
       <name>EEPROM</name>
       <description>EEPROM</description>
       <baseAddress>0x0000003F</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x4</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EEAR</name>
@@ -1131,21 +1071,6 @@ expression: svd
       <name>EXINT</name>
       <description>External Interrupts</description>
       <baseAddress>0x0000003B</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x2D</offset>
-        <size>0x2</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x30</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EICRA</name>
@@ -1371,11 +1296,6 @@ expression: svd
       <name>FUSE</name>
       <description>Fuses</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>EXTENDED</name>
@@ -1806,11 +1726,6 @@ expression: svd
       <name>LOCKBIT</name>
       <description>Lockbits</description>
       <baseAddress>0x00000000</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>LOCKBIT</name>
@@ -1915,11 +1830,6 @@ expression: svd
       <name>PORTB</name>
       <description>I/O Port</description>
       <baseAddress>0x00000023</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRB</name>
@@ -2098,11 +2008,6 @@ expression: svd
       <name>PORTC</name>
       <description>I/O Port</description>
       <baseAddress>0x00000026</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRC</name>
@@ -2263,11 +2168,6 @@ expression: svd
       <name>PORTD</name>
       <description>I/O Port</description>
       <baseAddress>0x00000029</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>DDRD</name>
@@ -2446,11 +2346,6 @@ expression: svd
       <name>SPI</name>
       <description>Serial Peripheral Interface</description>
       <baseAddress>0x0000004C</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>SPCR</name>
@@ -2574,21 +2469,6 @@ expression: svd
       <name>TC0</name>
       <description>Timer/Counter, 8-bit</description>
       <baseAddress>0x00000035</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xE</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>GTCCR</name>
@@ -2833,31 +2713,6 @@ expression: svd
       <name>TC1</name>
       <description>Timer/Counter, 16-bit</description>
       <baseAddress>0x00000036</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xD</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4A</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4E</offset>
-        <size>0x8</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>GTCCR</name>
@@ -3154,31 +3009,6 @@ expression: svd
       <name>TC2</name>
       <description>Timer/Counter, 8-bit Async</description>
       <baseAddress>0x00000037</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0xC</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x39</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x79</offset>
-        <size>0x5</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x7F</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>ASSR</name>
@@ -3474,11 +3304,6 @@ expression: svd
       <name>TWI</name>
       <description>Two Wire Serial Interface</description>
       <baseAddress>0x000000B8</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x6</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>TWAMR</name>
@@ -3663,16 +3488,6 @@ expression: svd
       <name>USART0</name>
       <description>USART</description>
       <baseAddress>0x000000C0</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <addressBlock>
-        <offset>0x4</offset>
-        <size>0x3</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>UBRR0</name>
@@ -3925,11 +3740,6 @@ expression: svd
       <name>WDT</name>
       <description>Watchdog Timer</description>
       <baseAddress>0x00000060</baseAddress>
-      <addressBlock>
-        <offset>0x0</offset>
-        <size>0x1</size>
-        <usage>registers</usage>
-      </addressBlock>
       <registers>
         <register>
           <name>WDTCSR</name>
