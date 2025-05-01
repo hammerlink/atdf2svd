@@ -12,6 +12,10 @@ fn update_register_group(register_group: &mut chip::RegisterGroup, delta: usize)
     }
 }
 
+/// Adjusts the peripheral's base address to the first register's absolute address.
+///
+/// Finds the minimum address among all registers and updates register offsets
+/// accordingly. This normalizes the peripheral's address space representation.
 fn base_line_address(peripheral: &mut chip::Peripheral) {
     let register_addresses = peripheral
         .register_group
@@ -23,15 +27,11 @@ fn base_line_address(peripheral: &mut chip::Peripheral) {
     if register_addresses.is_empty() {
         return;
     }
-    // Find the minimum register address, returning early if no registers exist
     let min_address = match register_addresses.iter().min() {
-        Some(addr) => *addr, // Dereference to get the actual usize value
+        Some(addr) => *addr,
         None => peripheral.address,
     };
-    // base_address still contains the offset, so we need to subtract it
     if min_address > peripheral.address {
-        println!("cargo:warning=Peripheral {} has a base address of {} which is greater than the peripheral address {}",
-            peripheral.name, min_address, peripheral.address);
         let delta = min_address - peripheral.address;
         peripheral.address = min_address;
         update_register_group(&mut peripheral.register_group, delta);
