@@ -1,7 +1,10 @@
+use std::fs;
+
 #[test]
 fn atmega328p() {
     let mut atdf = std::fs::File::open("tests/atmega328p.atdf").unwrap();
     let svd = atdf2svd::run_test(&mut atdf, vec![]);
+    fs::write("tests/data/atmega328p.svd", svd.as_str()).unwrap();
     insta::assert_snapshot!(svd);
 }
 
@@ -9,6 +12,7 @@ fn atmega328p() {
 fn atmega128rfa1() {
     let mut atdf = std::fs::File::open("tests/atmega128rfa1.atdf").unwrap();
     let svd = atdf2svd::run_test(&mut atdf, vec![]);
+    fs::write("tests/data/atmega128rfa1.svd", svd.as_str()).unwrap();
     insta::assert_snapshot!(svd);
 }
 
@@ -16,6 +20,7 @@ fn atmega128rfa1() {
 fn atxmega128a1() {
     let mut atdf = std::fs::File::open("tests/atxmega128a1.atdf").unwrap();
     let svd = atdf2svd::run_test(&mut atdf, vec![]);
+    fs::write("tests/data/atxmega128a1.svd", svd.as_str()).unwrap();
     insta::assert_snapshot!(svd);
 }
 
@@ -23,6 +28,7 @@ fn atxmega128a1() {
 fn attiny817() {
     let mut atdf = std::fs::File::open("tests/attiny817.atdf").unwrap();
     let svd = atdf2svd::run_test(&mut atdf, vec![]);
+    fs::write("tests/data/attiny817.svd", svd.as_str()).unwrap();
     insta::assert_snapshot!(svd);
 }
 
@@ -30,5 +36,6 @@ fn attiny817() {
 fn atmega4809() {
     let mut atdf = std::fs::File::open("tests/atmega4809.atdf").unwrap();
     let svd = atdf2svd::run_test(&mut atdf, vec![]);
+    fs::write("tests/data/atmega4809.svd", svd.as_str()).unwrap();
     insta::assert_snapshot!(svd);
 }
