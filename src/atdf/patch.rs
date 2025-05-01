@@ -92,7 +92,12 @@ pub fn remove_register_common_prefix(chip: &mut chip::Chip) -> crate::Result<()>
             continue;
         }
 
-        let register_names: Vec<_> = peripheral.register_group.registers.keys().map(String::as_str).collect();
+        let register_names: Vec<_> = peripheral
+            .register_group
+            .registers
+            .keys()
+            .map(String::as_str)
+            .collect();
         let common_prefix = longest_common_prefix(&register_names).to_string();
 
         let is_valid_prefix = common_prefix.ends_with("_") && common_prefix.chars().count() >= 2;

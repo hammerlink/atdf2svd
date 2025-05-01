@@ -89,11 +89,11 @@ pub fn parse(
 }
 
 pub fn parse_list(
-    register_group_header_el: &xmltree::Element,
+    register_group_el: &xmltree::Element,
     offset: usize,
     value_groups: &atdf::values::ValueGroups,
 ) -> crate::Result<BTreeMap<String, chip::Register>> {
-    register_group_header_el
+    register_group_el
         .iter_children_with_name("register", Some("register-group"))
         .map(|reg| {
             atdf::register::parse(reg, offset, value_groups).map(|r| {

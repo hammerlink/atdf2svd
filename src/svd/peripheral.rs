@@ -50,7 +50,11 @@ fn create_address_blocks(p: &chip::Peripheral) -> crate::Result<Option<Vec<svd_r
             current_size = reg.size;
         }
     }
-    address_blocks.push(new_address_block(current_offset, current_size.try_into()?, None)?);
+    address_blocks.push(new_address_block(
+        current_offset,
+        current_size.try_into()?,
+        None,
+    )?);
 
     let address_blocks = if !address_blocks.is_empty() {
         Some(address_blocks)
